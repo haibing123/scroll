@@ -1,12 +1,11 @@
 .container {
-    display: grid;
-    grid-template-columns: 40% 60%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  scroll-snap-type: x mandatory;
 }
 
-.text-column {
-    /* Additional styling for text column if needed */
-}
-
-.visual-column {
-    /* Additional styling for visual column if needed */
+.fixed-column {
+  position: sticky;
+  top: 0;
+  scroll-snap-align: start;
 }
