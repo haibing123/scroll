@@ -1,12 +1,12 @@
-.html, body {
-  overflow: hidden;
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
 .text-column {
-  scroll-snap-type: y mandatory;
+    /* Additional styling for text column if needed */
 }
 
-section {
-  height: 100vh;
-  scroll-snap-align: start;
+.visual-column {
+    /* Additional styling for visual column if needed */
 }
