@@ -1,8 +1,18 @@
-.container {
-  display: grid;
-  grid-template-columns: 40% 60%;
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
-.visual-column {
-  width: 60%;
+body {
+    margin: 0;
+}
+
+section {
+    height: 100vh; /* Full viewport height */
+    scroll-snap-align: start; /* Align the start of each section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional: Add more styles for aesthetics */
+    background-color: lightblue; /* Example background color */
 }
