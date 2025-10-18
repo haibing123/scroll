@@ -4,8 +4,10 @@
   scroll-snap-type: x mandatory;
 }
 
-.fixed-column {
-  position: sticky;
-  top: 0;
+.text-column {
+  scroll-snap-align: start;
+}
+
+.visual-column {
   scroll-snap-align: start;
 }
