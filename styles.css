@@ -1,33 +1,12 @@
 .container {
-  display: flex;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
 }
 
-.left {
-  flex: 40;
-  overflow-y: auto;
-  background-color: #f0f0f0;
-}
-
-.right {
-  flex: 60;
-  overflow-y: auto;
-  background-color: #ffffff;
-}
-
-/* Optional styling for scrollbars */
-.left::-webkit-scrollbar,
-.right::-webkit-scrollbar {
-  width: 8px;
-}
-
-.left::-webkit-scrollbar-thumb,
-.right::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-.left::-webkit-scrollbar-thumb:hover,
-.right::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.visual-column {
+  position: sticky;
+  top: 0;
+  scroll-snap-align: start;
 }
