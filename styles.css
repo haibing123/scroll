@@ -1,13 +1,33 @@
 .container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  scroll-snap-type: x mandatory;
+  display: flex;
+  height: 100vh;
 }
 
-.text-column {
-  scroll-snap-align: start;
+.left {
+  flex: 40;
+  overflow-y: auto;
+  background-color: #f0f0f0;
 }
 
-.visual-column {
-  scroll-snap-align: start;
+.right {
+  flex: 60;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+/* Optional styling for scrollbars */
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+  width: 8px;
+}
+
+.left::-webkit-scrollbar-thumb,
+.right::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.left::-webkit-scrollbar-thumb:hover,
+.right::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
