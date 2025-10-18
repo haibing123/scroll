@@ -1,3 +1,51 @@
-<section id="section1">
-    <p>Hi, I'm Daria. You're probably here because you're wondering how someone with "Instructional Designer" on their resume could possibly be a great Creative Technologist. Well, I'm here to show you exactly that. My job title might sound different, but the truth is, I've been doing the work of a creative technologist all along — just under another name. Everything I design is about experimenting, storytelling, prototyping, and translating complex ideas into experiences that make people feel and understand. Below, I've pulled together a few examples from my career to show you how the skills I use every day in instructional design line up perfectly with what you're looking for.</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Scrolling Story</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-column">
+            <section class="text-section" id="section1">
+                <p>Hi, I'm Daria. You're probably here because you're wondering how someone with "Instructional Designer" on their resume could possibly be a great Creative Technologist. Well, I'm here to show you exactly that. My job title might sound different, but the truth is, I've been doing the work of a creative technologist all along — just under another name. Everything I design is about experimenting, storytelling, prototyping, and translating complex ideas into experiences that make people feel and understand. Below, I've pulled together a few examples from my career to show you how the skills I use every day in instructional design line up perfectly with what you're looking for.</p>
+            </section>
+
+            <section class="text-section" id="section2">
+                <h2>Part One</h2>
+                <p>As we begin our journey, the full illustration comes into view, setting the stage for our story.</p>
+            </section>
+
+            <section class="text-section" id="section3">
+                <h2>Part Two</h2>
+                <p>Let's zoom in to explore this particular aspect of our story in more detail.</p>
+            </section>
+
+            <section class="text-section" id="section4">
+                <h2>Part Three</h2>
+                <p>Moving our focus to another area, we discover new details and connections.</p>
+            </section>
+
+            <section class="text-section" id="section5">
+                <h2>Conclusion</h2>
+                <p>Finally, we step back to see how all these elements come together in the bigger picture.</p>
+            </section>
+        </div>
+
+        <div class="visual-column">
+            <div class="illustration-container">
+                <!-- Placeholder SVG - Replace with your actual illustration -->
+                <svg id="main-illustration" viewBox="0 0 800 600" width="100%" height="100%">
+                    <rect x="50" y="50" width="700" height="500" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+                    <text x="400" y="300" text-anchor="middle" font-size="24">Your Illustration Here</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
