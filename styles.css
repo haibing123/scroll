@@ -1,8 +1,9 @@
-.text-column {
-  scroll-snap-type: y mandatory;
-}
-
-.text-section {
+.section {
   height: 100vh;
   scroll-snap-align: start;
+}
+
+.text-column {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
 }
